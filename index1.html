@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
-  <link rel="stylesheet" href="https://guicardosomartins.github.io/Project-Frontend-Mentor/index.css"/>
-  <script src="https://guicardosomartins.github.io/Project-Frontend-Mentor/index.js"></script>
-  
-  <title>Frontend Mentor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://guicardosomartins.github.io/Order-Summary/index.css"/>
+  <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,60 +18,35 @@
   </style>
 </head>
 <body>
+    <main id="container">
+      <section id="card">  
+          <img id="img-hero" src="/Order-summary-card/images/illustration-hero.svg" alt="illustration hero">
+        <section id="content">
+          <h1>Order Summary</h1>
+          <p>you can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+          <section id="plan">
+            <figure>
+              <img id="icon-music" src="/Order-summary-card/images/icon-music.svg" alt="">
+            </figure>
+            <article id="value">
+              <p id="AnnualPlan">Annual Plan</p>
+              <p>$59.99/year</p>
+            </article>
+            <article id="link-change">
+              <a class="link-change" href="#">Change</a>
+            </article>
+          </section>
+          <div id="payment"><a class="link-payment" href="#">Proceed to Payment</a></div>
+          <div id="cancel"><a class="link-cancel" href="#">Cancel Order</a></div>
+        </section>
+      </section>
+    </main>
+    
   
-  <div id="container">
-  <main id="main">
-    
-    <!-- PRIMEIRA PARTE COMEÇA AQUI-->
-    <div class="section" id="FirstPart">
-      <div class="description">Bill</div>
-      <div class="flex-label">
-      <label class="placeholder-label">$</label>
-      <input type="text"class="BigInputs ValorConta">
-      </div>
-      <div class="description">Select Tip %</div>
-      <div id="btn-buttons">
-        <button type="button" value="5" class="percent-btn Porcentagem">5%</button>
-        <button type="button" value="10" class="percent-btn Porcentagem">10%</button>
-        <button type="button" value="15" class="percent-btn Porcentagem">15%</button>
-        <button type="button" value="25" class="percent-btn Porcentagem">25%</button>
-        <button type="button" value="50" class="percent-btn Porcentagem">50%</button>
-        <input type="number" placeholder="Custom" class="btn-text Porcentagem"></button>
-      </div>
-      <div class="description">Number of People</div>
-      <div class="flex-label">
-      <label class="placeholder-label" for="lab" style="font-family: Arial, 'Font Awesome 5 free';">&#xF007;</label>
-      <input type="text" class="BigInputs Npessoas">
-      </div>
-    </div>
-    
-    <!-- SEGUNDA PARTE-->
-    <div id="SecondPart" class="section">
-      <div id="SecondPart-1">
-      <div class="flex-SecondPart">
-        <div class="description">Tip Amount 
-          <div class="person">/ person</div>
-        </div>
-        <div class="value ValorGorjeta">$ 0.00</div>
-      </div>
-      
-      <div class="flex-SecondPart" id="total">
-        <div class="description">Total
-          <div class="person">/ person</div>
-        </div>
-        <div class="value ValorTotal">$ 0.00</div>
-      </div>
-    </div>
-        <div id="div-btn-reset"><button type="button" class="btn-reset" id="btn-reset">RESET</button></div>
-    </div>
-      
-    
-  </main>
-  </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Guilherme Cardoso</a>.
-  </div>
-
+  </footer>
 </body>
 </html>
+
